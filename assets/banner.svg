@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Splunk for All</title>
+  <desc id="desc">A dark green and blue banner showing a search pipeline from raw events to insight.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071b24"/>
+      <stop offset="0.55" stop-color="#0b2731"/>
+      <stop offset="1" stop-color="#15342c"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#65a637"/>
+      <stop offset="1" stop-color="#00a4e4"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#a9d8ca">
+    <path d="M0 72H1200M0 144H1200M0 216H1200M0 288H1200"/>
+    <path d="M120 0V360M240 0V360M360 0V360M480 0V360M600 0V360M720 0V360M840 0V360M960 0V360M1080 0V360"/>
+  </g>
+  <g transform="translate(70 62)">
+    <rect width="76" height="76" rx="16" fill="#65a637" filter="url(#glow)"/>
+    <path d="M22 22l32 16-32 16" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="70" y="190" fill="#f5fbf9" font-family="Segoe UI, Arial, sans-serif" font-size="60" font-weight="700" letter-spacing="-1">Splunk for All</text>
+  <text x="72" y="237" fill="#b9d2cf" font-family="Segoe UI, Arial, sans-serif" font-size="23">FROM FIRST SEARCH TO PRODUCTION-SCALE MASTERY</text>
+  <g transform="translate(72 284)" font-family="Consolas, monospace" font-size="15">
+    <rect width="650" height="38" rx="19" fill="#051217" opacity="0.8"/>
+    <text x="20" y="25" fill="#65a637">index=learn</text>
+    <text x="134" y="25" fill="#d7e8e5">| stats</text>
+    <text x="207" y="25" fill="#00a4e4">count</text>
+    <text x="264" y="25" fill="#d7e8e5">by skill</text>
+    <text x="340" y="25" fill="#d7e8e5">| sort</text>
+    <text x="400" y="25" fill="#f7b500">- confidence</text>
+  </g>
+  <g transform="translate(815 70)">
+    <path d="M10 190C55 190 53 125 96 125S140 165 183 165s44-112 87-112 44 65 87 65" fill="none" stroke="url(#line)" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+    <g fill="#f5fbf9">
+      <circle cx="10" cy="190" r="7"/><circle cx="96" cy="125" r="7"/><circle cx="183" cy="165" r="7"/><circle cx="270" cy="53" r="7"/><circle cx="357" cy="118" r="7"/>
+    </g>
+    <text x="10" y="235" fill="#8fb0ac" font-family="Segoe UI, Arial, sans-serif" font-size="14">RAW DATA</text>
+    <text x="287" y="235" fill="#8fb0ac" font-family="Segoe UI, Arial, sans-serif" font-size="14">INSIGHT</text>
+  </g>
+</svg>
+

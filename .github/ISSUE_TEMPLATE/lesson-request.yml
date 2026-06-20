@@ -1,0 +1,25 @@
+name: Lesson or lab request
+description: Suggest a topic, example, dataset, or practical exercise.
+title: "[Request]: "
+labels: [enhancement]
+body:
+  - type: input
+    id: audience
+    attributes:
+      label: Intended learner
+      placeholder: Beginner analyst, platform admin, detection engineer...
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Learning outcome
+      description: What should the learner be able to do?
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Example scenario
+      description: Describe a synthetic, reproducible use case.
+

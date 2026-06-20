@@ -1,0 +1,29 @@
+name: Content correction
+description: Report inaccurate, unclear, outdated, or broken learning content.
+title: "[Correction]: "
+labels: [documentation]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Link or path to the affected section.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or unclear?
+      description: Include product edition/version when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+  - type: input
+    id: source
+    attributes:
+      label: Official source
+      description: Add an official documentation link when available.
+
